@@ -1,0 +1,26 @@
+package com.buse.srs.model;
+
+public class Card {
+    private int id;
+    private String front;
+    private String back;
+
+    public Card(int id,String front,String back){
+        this.id=id;
+        this.front=front;
+        this.back=back;
+    }
+    public int getId(){
+        return id;
+    }
+    public String getFront(){
+        return front;
+    }
+    public String getBack(){
+        return back;
+    }
+    @Override
+    public String toString(){
+        return "Card [id=" + id + ",front=" + front + ",back=" + back + "]";
+    }
+}
